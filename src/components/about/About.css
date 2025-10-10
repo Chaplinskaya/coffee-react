@@ -1,0 +1,19 @@
+.about-section {
+    padding: 80px 0 100px 0;
+    font-family: Merienda, cursive;
+    font-weight: regular;
+    color: #000;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.about-text p {
+    max-width: 610px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 14px;
+}

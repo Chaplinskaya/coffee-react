@@ -1,0 +1,63 @@
+.cards-section {
+    background: url('../../img/wallpaper.png') no-repeat center/cover;
+    padding: 80px 0 110px;
+    text-align: center;
+
+    h1 {
+        color: #000000;
+        margin-top: 0;
+    }
+}
+
+.cards-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 220px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    h3 {
+        font-size: 14px;
+        color: #000000;
+        margin: 0;
+    }
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    padding: 0 10px
+}
+
+.card-country {
+    font-style: italic;
+    color: #777;
+}
+
+.page-home .card-price {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #000000;
+    text-align: right;
+}

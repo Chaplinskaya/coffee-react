@@ -1,0 +1,64 @@
+.header {
+    text-align: center;
+    color: #fff;
+    padding-bottom: 84px;
+    position: relative;
+
+    p {
+        font-size: 27px;
+    }
+}
+
+.header--with-button {
+    padding-bottom: 120px;
+}
+
+.header-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    /* відстань між лінією і картинкою */
+    margin: 20px 0;
+}
+
+.header-divider .line {
+    /*flex: 1;
+    /* лінії розтягуються */
+    height: 1px;
+    background-color: #fff;
+    width: 60px;
+
+}
+
+.header-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.header-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.header-button {
+    margin: 0 auto;
+    display: block;
+    padding: 10px 0;
+    width: 120px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
+}
+
+.header-button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+}

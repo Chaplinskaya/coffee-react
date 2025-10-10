@@ -1,0 +1,61 @@
+.header-logo-menu {
+    display: flex;
+
+    font-family: 'Marienda', cursive;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+
+    li {
+        line-height: 15px;
+
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            padding: 0;
+        }
+    }
+}
+
+.header-logo-menu.light {
+    align-items: end;
+    justify-content: left;
+    padding-top: 20px;
+    padding-left: 150px;
+    height: 40px;
+
+    a {
+        color: white;
+    }
+}
+
+/* темна тема — для Footer */
+.header-logo-menu.dark {
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    height: 40px;
+    padding-bottom: 30px;
+
+    a {
+        color: black;
+    }
+
+    nav {
+        margin-left: 5px;
+    }
+}
+
+.menu-list a:hover {
+    opacity: 0.7;
+}
