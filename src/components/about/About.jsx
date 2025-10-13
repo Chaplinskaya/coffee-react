@@ -6,12 +6,17 @@ class About extends Component {
         const { image } = this.props; //
         return (
             <div className="about-section">
-                {/* Блок картинки */}
-                {image && <img src={image} alt="Coffee" className="about-image" />}
 
                 {/* Текстовий блок */}
                 <div className="about-text">
                     <h2 className="about-title">About Us</h2>
+                    {image && (
+                        <div className="about-divider">
+                            <span className="line"></span>
+                            <img src={image} alt="About icon" className="about-icon" />
+                            <span className="line"></span>
+                        </div>
+                    )}
                     <p className="about-description">Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.
                         Afraid at highly months do things on at. Situation recommend objection do intention so questions. As greatly removed calling pleased improve an. Last ask him cold feel met spot shy want. Children me laughing we prospect answered followed. At it went is song that held help face.<br /><br />
 

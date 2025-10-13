@@ -1,3 +1,26 @@
 .footer {
     padding: 30px 0 20px 0;
 }
+
+.footer-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    /* відстань між лінією і картинкою */
+    margin: 5px 0;
+}
+
+.footer-divider .line {
+    /*flex: 1;
+    /* лінії розтягуються */
+    height: 1px;
+    background-color: #000;
+    width: 60px;
+
+}
+
+.footer-icon {
+    width: 35px;
+    height: 35px;
+}

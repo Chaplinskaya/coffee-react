@@ -2,7 +2,7 @@ import { Component } from "react";
 import { Link } from "react-router-dom";
 
 import logoWhite from "../../img/coffee-beans.png";
-import logoBlack from "../../img/beans-black.png";
+import logoBlack from "../../img/beans-wait.png";
 
 import "./Menu.css";
 

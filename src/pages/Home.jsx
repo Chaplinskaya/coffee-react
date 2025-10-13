@@ -8,6 +8,7 @@ import { coffeeData } from "../data/coffeeData";
 
 import mainBg from "../img/mainbg.jpg";
 import beansIcon from "../img/beans.png";
+import beansBlack from "../img/beans-black.png";
 import "./Home.css";
 
 
@@ -21,9 +22,9 @@ class Home extends Component {
                     subtitle="We make every day full of energy and taste"
                     substitle="Want to try our beans?"
                     button="More" />
-                <About />
+                <About image={beansBlack} />
                 <CardsSection data={coffeeData} showCountry={false} />
-                <Footer />
+                <Footer image={beansBlack} />
             </div>
         );
     }
