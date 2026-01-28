@@ -3,10 +3,10 @@ import "./CardsSection.css";
 
 class CardsSection extends Component {
     render() {
-        const { data, showCountry } = this.props;
+        const { data, showCountry, withBg } = this.props;
 
         return (
-            <section className="cards-section">
+            <section className={`cards-section ${withBg ? 'cards-section--with-bg' : ''}`}>
                 <h1 className="cards-title">Our best</h1>
 
                 <div className="cards">

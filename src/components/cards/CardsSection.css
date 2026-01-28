@@ -1,12 +1,15 @@
 .cards-section {
-    background: url('../../img/wallpaper.png') no-repeat center/cover;
     padding: 80px 0 110px;
     text-align: center;
+}
 
-    h1 {
-        color: #000000;
-        margin-top: 0;
-    }
+.cards-section--with-bg {
+    background: url('../../img/wallpaper.png') no-repeat center/cover;
+}
+
+h1 {
+    color: #fff;
+
 }
 
 .cards-title {
@@ -19,6 +22,8 @@
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
+    width: 740px;
+    margin: 0 auto;
 }
 
 .card {

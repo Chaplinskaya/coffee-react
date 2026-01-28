@@ -30,9 +30,9 @@ nav ul {
 .header-logo-menu.light {
     align-items: end;
     justify-content: left;
-    padding-top: 20px;
+    padding-top: 60px;
     padding-left: 150px;
-    height: 40px;
+    height: 60px;
 
     a {
         color: white;

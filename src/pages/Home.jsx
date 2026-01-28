@@ -23,7 +23,7 @@ class Home extends Component {
                     substitle="Want to try our beans?"
                     button="More" />
                 <About image={beansBlack} />
-                <CardsSection data={coffeeData} showCountry={false} />
+                <CardsSection data={coffeeData} showCountry={false} withBg />
                 <Footer image={beansBlack} />
             </div>
         );
