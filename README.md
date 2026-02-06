@@ -1,16 +1,23 @@
-# React + Vite
+Coffee React Project 
+A React-based web application for a coffee shop, built to master the fundamental concepts of the library.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Key Features
+Class-Based Architecture: Developed using Class Components to deeply understand React's core logic and lifecycle.
 
-Currently, two official plugins are available:
+Dynamic Routing: Implemented multi-page navigation using react-router-dom.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Reusable Components: Created a modular system where components (like CardsSection) adapt their styles and content via props.
 
-## React Compiler
+Data Management: Centralized data handling using a mock database (coffeeData.js) and JavaScript array methods like .map() and .slice().
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Tech Stack
+React.js (Class Components)
 
-## Expanding the ESLint configuration
+React Router
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+CSS3 (Custom styling & Flexbox)
+
+JavaScript (ES6+)
+
+Learning Goals
+The main purpose of this project was to solidify the understanding of Props, State, and Conditional Rendering through a real-world architectural approach.
