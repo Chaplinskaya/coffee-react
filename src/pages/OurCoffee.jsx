@@ -10,21 +10,30 @@ import "./OurCoffee.css";
 
 class OurCoffee extends Component {
     state = {
-        activeCountry: "All"
+        activeCountry: "All",
+        search: ""
     };
 
     setCountry = (country) => {
         this.setState({ activeCountry: country });
     };
-    render() {
-        const { activeCountry } = this.state;
+    onSearchChange = (e) => {
+        this.setState({ search: e.target.value });
+    };
 
-        const filteredData =
-            activeCountry === "All"
-                ? coffeeData
-                : coffeeData.filter(
-                    (item) => item.country === activeCountry
-                );
+    render() {
+        const { activeCountry, search } = this.state;
+
+        const filteredData = coffeeData
+            .filter(item =>
+                activeCountry === "All"
+                    ? true
+                    : item.country === activeCountry
+            )
+            .filter(item =>
+                item.title.toLowerCase().includes(search.toLowerCase()) ||
+                item.country.toLowerCase().includes(search.toLowerCase())
+            );
 
         return (
             <div className="page-our-coffee-section">
@@ -45,16 +54,27 @@ class OurCoffee extends Component {
                     </div>
 
                 </div>
-                <div className="tabs">
-                    {["All", "Brazil", "Kenya", "Colombia"].map((country) => (
-                        <button
-                            key={country}
-                            className={activeCountry === country ? "active" : ""}
-                            onClick={() => this.setCountry(country)}
-                        >
-                            {country}
-                        </button>
-                    ))}
+                <div className="search-tabs">
+                    <div className="filters">
+                        <input
+                            type="text"
+                            placeholder="Looking for..."
+                            value={search}
+                            onChange={this.onSearchChange}
+                            className="search-input"
+                        />
+                    </div>
+                    <div className="tabs">
+                        {["All", "Brazil", "Kenya", "Colombia"].map((country) => (
+                            <button
+                                key={country}
+                                className={activeCountry === country ? "active" : ""}
+                                onClick={() => this.setCountry(country)}
+                            >
+                                {country}
+                            </button>
+                        ))}
+                    </div>
                 </div>
 
                 <CardsSection data={filteredData} showCountry={true} />

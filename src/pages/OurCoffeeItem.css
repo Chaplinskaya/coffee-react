@@ -1,0 +1,35 @@
+.coffee-item-page {
+    padding: 40px;
+    text-align: center;
+}
+
+.about-text-item {
+    font-family: 'Merienda', cursive;
+}
+
+.about-text-item h2,
+.about-text-item p {
+    text-align: left;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.coffee-item-image {
+    width: 530px;
+    max-width: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.coffee-item-info {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.price-value {
+    font-size: 24px;
+
+}

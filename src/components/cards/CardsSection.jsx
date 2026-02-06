@@ -1,23 +1,27 @@
 import { Component } from "react";
+import Card from "./Card";
 import "./CardsSection.css";
 
 class CardsSection extends Component {
     render() {
-        const { data, showCountry, withBg } = this.props;
+        const { data, showCountry, withBg, paddingCustom } = this.props;
 
         return (
-            <section className={`cards-section ${withBg ? 'cards-section--with-bg' : ''}`}>
+            <section className={`cards-section ${withBg ? 'cards-section--with-bg' : ''}`} style={{ padding: paddingCustom }}>
                 <h1 className="cards-title">Our best</h1>
 
                 <div className="cards">
                     {data.map((coffee) => (
-                        <div key={coffee.id} className="card">
-                            <img src={coffee.image} alt={coffee.title} className="card-image" />
-                            <h3>{coffee.title}</h3>
-                            {/* тільки якщо showCountry === true */}
-                            {showCountry && <p className="card-country">{coffee.country}</p>}
-                            <p className="card-price">{coffee.price}$</p>
-                        </div>
+                        <Card
+                            key={coffee.id}
+                            id={coffee.id}
+                            image={coffee.image}
+                            title={coffee.title}
+                            //description={coffee.description}
+                            price={coffee.price}
+                            country={coffee.country}
+                            showCountry={showCountry}
+                        />
                     ))}
                 </div>
             </section>

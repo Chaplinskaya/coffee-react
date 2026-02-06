@@ -18,7 +18,7 @@ class Menu extends Component {
                     <ul className="menu-list">
                         <li><Link to="/">Coffee house</Link></li>
                         <li><Link to="/ourcoffee">Our coffee</Link></li>
-                        <li><Link to="/ourcoffeeitem">For your pleasure</Link></li>
+                        <li><Link to="/pleasure">For you pleasure</Link></li>
                     </ul>
                 </nav>
             </div>

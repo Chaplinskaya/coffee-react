@@ -1,10 +1,30 @@
 .page-our-coffee-section {
-    font-family: 'Marienda', cursive;
+    font-family: 'Merienda', cursive;
 }
 
 .page-our-coffee {
     padding: 50px 0;
     display: flex;
+    justify-content: center;
+    gap: 55px
+}
+
+img.about-image {
+    margin: 0;
+    width: 300px;
+    object-fit: fill;
+    display: block;
+    flex-shrink: 0;
+}
+
+.about-text {
+    padding-top: 50px
+}
+
+.search-tabs {
+    display: flex;
+    align-items: center;
+    gap: 30px;
     justify-content: center;
 }
 
