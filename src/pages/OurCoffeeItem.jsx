@@ -31,7 +31,7 @@ function OurCoffeeItem() {
                 />
                 <div className="about-text">
                     <div className="about-text-item">
-                        <h2 className="about-title">{coffee.title}</h2>
+                        <h2 className="about-title">About it</h2>
                         <p><b>Country:</b> {coffee.country}</p>
                         <p>
                             <strong>Description:</strong>{" "}

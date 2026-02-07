@@ -4,11 +4,11 @@ import "./CardsSection.css";
 
 class CardsSection extends Component {
     render() {
-        const { data, showCountry, withBg, paddingCustom } = this.props;
+        const { data, showCountry, withBg, showTitle, paddingCustom } = this.props;
 
         return (
             <section className={`cards-section ${withBg ? 'cards-section--with-bg' : ''}`} style={{ padding: paddingCustom }}>
-                <h1 className="cards-title">Our best</h1>
+                {showTitle && <h2 className="cards-title">Our best</h2>}
 
                 <div className="cards">
                     {data.map((coffee) => (

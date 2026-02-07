@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home.jsx";
 import OurCoffee from "./pages/OurCoffee.jsx";
@@ -12,7 +12,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router basename="/coffee-react">
+      <Router>
         <div className="App">
 
           <Routes>
@@ -23,7 +23,7 @@ class App extends Component {
           </Routes>
 
         </div>
-      </Router>
+      </Router >
     );
   }
 }

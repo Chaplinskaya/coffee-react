@@ -77,7 +77,7 @@ class OurCoffee extends Component {
                     </div>
                 </div>
 
-                <CardsSection data={filteredData} showCountry={true} />
+                <CardsSection data={filteredData} showCountry={true} showTitle={false} />
                 <Footer image={beansBlack} />
             </div >
         );
